@@ -74,6 +74,7 @@ namespace BirdGame
             // 
             start.AutoSize = true;
             start.BackColor = Color.FromArgb(255, 128, 128);
+            start.BackgroundImageLayout = ImageLayout.None;
             start.Font = new Font("Unispace", 13.7999992F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
             start.Location = new Point(544, 275);
             start.Name = "start";
@@ -159,6 +160,7 @@ namespace BirdGame
             Controls.Add(start);
             Controls.Add(scoreLabel);
             Controls.Add(cloud);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bird Game";

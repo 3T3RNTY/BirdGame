@@ -69,7 +69,7 @@ namespace BirdGame
                 horizontalMove = -15;
             }
 
-            if (bird.Bounds.IntersectsWith(pipeup.Bounds) || bird.Bounds.IntersectsWith(pipedown.Bounds) || bird.Bounds.IntersectsWith(ground.Bounds) || bird.Top == -0)
+            if (bird.Bounds.IntersectsWith(pipeup.Bounds) || bird.Bounds.IntersectsWith(pipedown.Bounds) || bird.Bounds.IntersectsWith(ground.Bounds) || bird.Top <= -10)
             {
                 timer.Stop();
                 endLabel.Visible = true;
